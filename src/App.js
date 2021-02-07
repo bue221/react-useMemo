@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Focus, CopyApp, MediaPlayer, ScrollAnimation } from "./components";
+import {
+  Focus,
+  CopyApp,
+  MediaPlayer,
+  ScrollAnimation,
+  Loading,
+} from "./components";
 
 const App = () => {
   return (
@@ -8,7 +14,8 @@ const App = () => {
       {/* <Focus /> */}
       {/* <CopyApp /> */}
       {/* <MediaPlayer /> */}
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
+      <Loading />
     </div>
   );
 };
