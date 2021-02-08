@@ -1,13 +1,19 @@
-import React from "react";
+import React, { memo, useEffect } from "react";
 
-const List = ({ users }) => {
+import Item from "./Item";
+
+const List = memo(({ users }) => {
+  useEffect(() => {
+    console.log("render List");
+  });
+
   return (
     <div>
       {users.map((i) => (
-        <h1>{i.name}</h1>
+        <Item {...i} />
       ))}
     </div>
   );
-};
+});
 
 export default List;
