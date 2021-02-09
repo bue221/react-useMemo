@@ -10,6 +10,7 @@ import {
   Modal,
   useModal,
 } from "./components";
+import MovieApp from "./MovieApp/App";
 
 const App = () => {
   // const [users, setUsers] = useState([{ name: "Alberto" }, { name: "Camilo" }]);
@@ -57,6 +58,7 @@ const App = () => {
         <h1>Buena perro</h1>
         <p>Ahora sirve el modal re bien</p>
       </Modal> */}
+      <MovieApp />
     </div>
   );
 };
