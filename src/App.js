@@ -35,7 +35,7 @@ const App = () => {
   //   console.log("Render App");
   // })
 
-  const [open, openModal, closeModal] = useModal();
+  // const [open, openModal, closeModal] = useModal();
 
   return (
     <div>
@@ -52,11 +52,11 @@ const App = () => {
       <button onClick={handleAdd}>Send</button>
       <button onClick={handleSearch}>Search</button>
       <List users={filteredUsers} /> */}
-      <button onClick={openModal}>{open ? "close" : "open"}</button>
+      {/* <button onClick={openModal}>{open ? "close" : "open"}</button>
       <Modal open={open} close={closeModal}>
         <h1>Buena perro</h1>
         <p>Ahora sirve el modal re bien</p>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
